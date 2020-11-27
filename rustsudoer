@@ -1,0 +1,4 @@
+# Created by cloud-init v. 20.3-2-g371b392c-0ubuntu1~18.04.1 on Fri, 06 Nov 2020 15:30:26 +0000
+
+# User rules for azureuser
+rust ALL=(ALL) NOPASSWD:ALL

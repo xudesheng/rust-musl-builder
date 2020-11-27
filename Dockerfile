@@ -73,7 +73,7 @@ RUN apt-get update && \
 RUN sudo ln -s "/usr/bin/g++" "/usr/bin/musl-g++"
 
 # Allow sudo without a password.
-ADD sudoers /etc/sudoers.d/nopasswd
+ADD rustsudoer /etc/sudoers.d/nopasswd
 
 # Run all further code as user `rust`, and create our working directories
 # as the appropriate user.

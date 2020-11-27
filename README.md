@@ -1,5 +1,20 @@
 # `rust-musl-builder`: Docker container for easily building static Rust binaries
 
+## How to use
+### How to build your image
+```sh
+docker build -t rust-musl-builder .
+```
+### How to use docker to build your code
+
+Enter your repo root folder
+```sh
+docker run -it --rm --net=host -v ${pwd}:/home/rust/src rust-musl-builder bash
+```
+Then you can build it in bash shell
+
+
+
 [![Docker Image](https://img.shields.io/docker/pulls/ekidd/rust-musl-builder.svg?maxAge=2592000)](https://hub.docker.com/r/ekidd/rust-musl-builder/)
 
 - [Source on GitHub](https://github.com/emk/rust-musl-builder)
